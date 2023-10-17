@@ -2,7 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+
+
+@layer base{
+
+  html{
+    @apply bg-[#190E36] 
+  }
+  
+  body{
+    @apply text-white
+  }
+
+}
+
+@layer components {
+   
+   .nav-list {
+     @apply mx-6 text-xl capitalize
+   }
+   .nav-list:hover {
+     @apply text-green underline underline-offset-8 
+   }
+} 
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +48,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
