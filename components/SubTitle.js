@@ -1,6 +1,6 @@
 
 
-export default function MissionAndVission({subTitle}) {
+export default function SubTitle({subTitle}) {
 
 
   return (

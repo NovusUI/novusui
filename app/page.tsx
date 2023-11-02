@@ -23,29 +23,30 @@ Tech. Let us hold hands while we grow.
 
   return (
     <main>
-      <section className="h-screen" id='home'>
+      <section className="h-screen px-4" id='home'>
        
         <nav className="h-1/6 p-4 flex justify-center items-center" >
-          <div className="flex items-center absolute left-120px">
+          <div className="flex items-center absolute left-6 lg:left-120px ">
             <h1 className=" text-xl font-bold">NovusUi</h1>
           </div>
-          <ul className="flex justify-center">
+          <ul className="hidden lg:flex justify-center">
             <li className="nav-list"><a href={"#home"}>home</a></li>
             <li className="nav-list"><a href={"#works"}>our works</a></li>
             <li className="nav-list"><a href={"#about"}>about</a></li>
             <li className="nav-list"><a href={"#s-mat"}>study materials</a></li>
           </ul>
+
         </nav>
 
         <div className='h-5/6 text-center flex flex-col justify-center items-center space-y-20 '>
 
-          <h1 className='uppercase text-5xl font-semibold'>tech for the future</h1>
-          <p className='text-3xl text-[#929292] w-469'>we are focused on building products for the future</p>
-          <button className='uppercase bg-green w-360 h-16 text-2xl'>see what we are about</button>
+          <h1 className='uppercase text-2xl font-semibold md:text-5xl '>tech for the future</h1>
+          <p className='text-xl text-[#929292] w-365 md:w-469 md:text-3xl '>we are focused on building products for the future</p>
+          <button className='uppercase bg-green w-56 h-10 text-xs md:w-360 md:h-16 md:text-2xl'>see what we are about</button>
     
         </div>
       </section>
-      <section className='px-120px space-y-10 h-screen' id='about'>
+      <section className='space-y-10 p-4 pb-28  px-16 lg:px-120px' id='about'>
        <DividerTitle title={"about us"}/>
         <MissionAndVssion para={aboutUs1}/>
         <MissionAndVssion para={aboutUs2}/>
@@ -54,10 +55,10 @@ Tech. Let us hold hands while we grow.
         <SubTitle subTitle={"our mission and vission"}/>
         <MissionAndVssion title={"our vission"} para={ourVissionPara}/>
       </section>
-      <section className='px-120px h-screen p-12'>
-        <div className='flex flex-col bg-[#5C2BF5] p-12 space-y-16 pb-16 rounded-2xl'>
+      <section className='h-auto md:p-12  lg:px-120px'>
+        <div className='flex flex-col bg-[#5C2BF5] px-6 pt-12 pb-16 lg:p-12 space-y-16  rounded-2xl'>
           <h1 className='uppercase text-center text-2xl'>what we do for our clients</h1>
-          <div className='flex justify-around '>
+          <div className='flex justify-around flex-col md:pb-10  lg:flex-row '>
             <Product title={uiux.title} para={uiux.para}/>
             <Product title={uiux.title} para={uiux.para}/>
             <Product title={uiux.title} para={uiux.para}/>
@@ -66,53 +67,48 @@ Tech. Let us hold hands while we grow.
        
         <DividerTitle title={motivatedProductTitle} isBothSide={true}/>
       </section>
-      <section className='h-screen pt-20 space-y-24' id='works'>
-          <div className='mb-40'>
-            <ul className="flex justify-center space-x-20 text-3xl uppercase">
-            <li className="">web3</li>
-            <li className="">fintech</li>
-            <li className="">lifestyle & fashion</li>
-            <li className="">agrotech</li>
+      <section className=' pt-20 space-y-24 ' id='works'>
+          <div className='mb-40 px-10 '>
+            <ul className="flex justify-center  flex-wrap text-2xl uppercase">
+            <li className=" mx-2 md:mx-20 mb-5">web3</li>
+            <li className="mx-2 md:mx-20 mb-5">fintech</li>
+            <li className=" mx-2 md:mx-20 mb-5">lifestyle & fashion</li>
+            <li className="mx-2 md:mx-20 mb-5">agrotech</li>
             </ul>
           </div>
-          <div className='relative left-120px'>
+          <div className='p-120px'>
           <SubTitle subTitle={"some of our works"}/>
           </div>
-          <div className='bg-[#564C923B]'>
-          <ul className="flex justify-center space-x-20 text-3xl uppercase py-20">
+          <div className='bg-[#564C923B] overflow-auto'>
+          <ul className="flex justify-center space-x-20 text-2xl uppercase py-20">
             <li className="">ICE-BUILDING TOOL</li>
             <li className="">LIB-SYSTEM</li>
             <li className="">500BOXX</li>
             <li className="">SMARTSOM</li>
             </ul>
           </div>
-          <div className='relative left-120px'>
+        
+          <div className='p-120px'>
           <DividerTitle title={"coming soon"}/>
           </div>
       </section>
       <section className='text-center'>
-        <div className='flex justify-center'>
+        <div className='flex justify-center flex-col lg:flex-row'>
         <SocialLink title={"novusui blog"} link={"blog.novusui.com"}/>
         <SocialLink title={"novusui youtube"} link={"youtube.novusui.com"}/>
         <SocialLink title={"novusui community"} link={"community.novusui.com"}/>
         <SocialLink title={"study materials"} link={"thenodenovice.novusui.com"}/>
         </div>
-        <h1 className='uppercase mt-20 mb-6 text-3xl'>
+        <h1 className='uppercase mt-20 mb-6 text-2l md:text-3xl'>
           subscribe to our newsletter
         </h1>
-        <div className='space-x-4 pb-48'>
-          <input placeholder='your email' className='uppercase ps-12 h-12 rounded-2xl w-2/5 bg-[#67609438]'>
+        <div className='md:space-x-4 pb-48 flex justify-center items-center flex-col md:flex-row'>
+          <input placeholder='your email' className='uppercase ps-12 h-12 rounded-2xl w-3/5 md:w-2/5 bg-[#67609438]'>
           </input>
-          <button className='uppercase bg-green h-12 w-36 rounded-2xl'>submit</button> 
+          <button className='uppercase bg-green h-12 w-3/5 mt-4 md:mt-0 md:w-36 rounded-2xl'>submit</button> 
         </div>
         <nav className="h-1/6 p-4 flex justify-center items-center" >
-          <ul className="flex justify-center">
-          <li className="nav-list"><a href={"#home"}>home</a></li>
-            <li className="nav-list"><a href={"#works"}>our works</a></li>
-            <li className="nav-list"><a href={"#about"}>about</a></li>
-            <li className="nav-list"><a href={"#s-mat"}>study materials</a></li>
-          </ul>
-          <div className="flex items-center absolute right-120px space-x-10">
+          <div className="flex items-center space-x-10">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
               <path d="M30.7283 34.895H9.27165C8.16658 34.895 7.10677 34.456 6.32537 33.6746C5.54397 32.8932 5.10498 31.8334 5.10498 30.7283V9.27165C5.10498 8.16658 5.54397 7.10677 6.32537 6.32537C7.10677 5.54397 8.16658 5.10498 9.27165 5.10498H30.7283C31.8334 5.10498 32.8932 5.54397 33.6746 6.32537C34.456 7.10677 34.895 8.16658 34.895 9.27165V30.7283C34.895 31.8334 34.456 32.8932 33.6746 33.6746C32.8932 34.456 31.8334 34.895 30.7283 34.895ZM9.27165 6.77165C8.60861 6.77165 7.97272 7.03504 7.50388 7.50388C7.03504 7.97272 6.77165 8.60861 6.77165 9.27165V30.7283C6.77165 31.3914 7.03504 32.0272 7.50388 32.4961C7.97272 32.9649 8.60861 33.2283 9.27165 33.2283H30.7283C31.3914 33.2283 32.0272 32.9649 32.4961 32.4961C32.9649 32.0272 33.2283 31.3914 33.2283 30.7283V9.27165C33.2283 8.60861 32.9649 7.97272 32.4961 7.50388C32.0272 7.03504 31.3914 6.77165 30.7283 6.77165H9.27165Z" fill="white"/>
               <path d="M20.0001 27.6565C18.4857 27.6549 17.0058 27.2043 15.7475 26.3617C14.4891 25.5191 13.5088 24.3224 12.9305 22.9227C12.3522 21.5231 12.2018 19.9835 12.4984 18.4984C12.795 17.0133 13.5252 15.6495 14.5967 14.5794C15.6682 13.5093 17.033 12.7808 18.5185 12.4862C20.0039 12.1916 21.5434 12.3439 22.9422 12.9241C24.3411 13.5042 25.5366 14.4861 26.3775 15.7455C27.2184 17.005 27.6671 18.4855 27.6668 19.9998C27.6641 22.0314 26.8552 23.9789 25.4177 25.4145C23.9802 26.8501 22.0317 27.6565 20.0001 27.6565ZM20.0001 13.9998C18.8158 14.0015 17.6585 14.3541 16.6744 15.0131C15.6904 15.6721 14.9237 16.608 14.4713 17.7024C14.0188 18.7969 13.9009 20.001 14.1323 21.1625C14.3638 22.324 14.9342 23.3908 15.7717 24.2283C16.6091 25.0657 17.676 25.6362 18.8375 25.8676C19.999 26.0991 21.203 25.9811 22.2975 25.5287C23.392 25.0762 24.3278 24.3095 24.9869 23.3255C25.6459 22.3414 25.9985 21.1842 26.0001 19.9998C26.0001 18.4085 25.368 16.8824 24.2427 15.7572C23.1175 14.632 21.5914 13.9998 20.0001 13.9998Z" fill="white"/>

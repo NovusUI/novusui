@@ -13,6 +13,7 @@ const config: Config = {
       },
       width:{
         "360":"360px",
+        "365":"365px",
         "469":"550px"
       },
       spacing:{
