@@ -41,7 +41,7 @@ Tech. Let us hold hands while we grow.
         <div className='h-5/6 text-center flex flex-col justify-center items-center space-y-20 '>
 
           <h1 className='uppercase text-2xl font-semibold md:text-5xl '>tech for the future</h1>
-          <p className='text-xl text-[#929292] w-365 md:w-469 md:text-3xl '>we are focused on building products for the future</p>
+          <p className='text-xl text-[#929292] sm:w-365 md:w-469 md:text-3xl '>we are focused on building products for the future</p>
           <button className='uppercase bg-green w-56 h-10 text-xs md:w-360 md:h-16 md:text-2xl'>see what we are about</button>
     
         </div>
